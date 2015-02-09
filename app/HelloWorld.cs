@@ -40,10 +40,10 @@ internal class Program
                 Console.Write("  ");
                 for (int col = 0; col < 2; col++)
                 {
-                    Console.BackgroundColor = colors[row * 2 + col];
-                    Console.ForegroundColor = colors[row * 2 + col];
+                    //Console.BackgroundColor = colors[row * 2 + col];
+                    //Console.ForegroundColor = colors[row * 2 + col];
                     for (int j = 0; j < squareSize; j++) Console.Write('@');
-                    Console.ResetColor();
+                    //Console.ResetColor();
                 }
             }
         }
@@ -122,7 +122,7 @@ internal class Program
         {
             if (c == '\n')
             {
-                Console.ResetColor();
+                //Console.ResetColor();
                 Console.WriteLine();
             }
             else
@@ -132,13 +132,13 @@ internal class Program
                     c == '@' ? ConsoleColor.Black :
                     c == '-' ? ConsoleColor.Yellow :
                     ConsoleColor.White;
-                Console.BackgroundColor = cc;
-                Console.ForegroundColor = cc;
+                //Console.BackgroundColor = cc;
+                //Console.ForegroundColor = cc;
                 Console.Write(" ");
             }
         }
 
-        Console.ResetColor();
+        //Console.ResetColor();
         Console.WriteLine();
     }
 
@@ -179,9 +179,9 @@ internal class Program
           :@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@;
              @@@@@@@;           ;@@@@@@@";
 
-        Console.ForegroundColor = ConsoleColor.White;
+        //Console.ForegroundColor = ConsoleColor.White;
         Console.Write(Apple);
-        Console.ResetColor();
+        //Console.ResetColor();
         Console.WriteLine();
     }
 }
